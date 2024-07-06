@@ -5,7 +5,7 @@
 
 
 #include "menu_block.h" 
-
+//test comment
 typedef struct 
 {
 	unsigned max_text_length; 
