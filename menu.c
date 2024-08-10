@@ -3,7 +3,6 @@
 #include <assert.h>
 #include <stdbool.h>
 
-
 #include "menu_block.h" 
 //test comment
 typedef struct 
@@ -20,6 +19,8 @@ void menu_set_item(menu* mnu, unsigned index, char* txt, unsigned text_length)
 {
 	assert(index < mnu->num_text_items); 
 	assert(text_length < mnu->max_text_length); 
+	for(int i = 0; i <= text_length; i++) 
+		char[index * max_text_length * sizeof(char) + i] = txt[i];
 }
 void menu_set_text_length(menu* mnu, unsigned length)
 {
